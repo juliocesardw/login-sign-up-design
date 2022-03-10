@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REGISTRO</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="page-block">
+
+        <div class="left-imagen">
+            <img src="portada.jpg" alt="">
+        </div>
+
+        <div class="right-login">
+
+            <h2>CREA TU CUENTA</h2>
+            <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a></p>
+
+            <form action="" class="formulario" id="formRegistro" method="POST">
+
+                <div class="content-foto image-empty">
+                    <div class="imagen-view"> </div>
+                    <button type="button" class="btn-img-delete btnDeleteImg" ><i class="fa-solid fa-xmark"></i></button>
+                    <label for="fotoPerfil" class="btn-imagen">
+                        <i class="icono fa-solid fa-plus"></i>
+                        <input type="file" name="foto" id="fotoPerfil" accept=".png, .jpg, .jpeg">
+                    </label>
+                    
+                </div>
+                <div class="error-image"></div>
+
+                <div class="text">imágenes permitidas : png, jpg, jpeg.</div>
+
+                <div class="form-input">
+                    <div class="g-input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="input" placeholder="Nombre" name="nombre" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="form-input">
+                    <div class="g-input">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" class="input" placeholder="E-mail" name="correo" required >
+                    </div>
+                    
+                </div>
+
+                <div class="form-input">
+                    <div class="g-input">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" class="input" placeholder="Contraseña" name="password" required>
+                        <span active-pass="true" class="ver-password fa-solid fa-eye-slash">
+                        </span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-orange" id="btnRegistrar">
+                    CREAR CUENTA
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+     <!-- ICONS: Font Awesome -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://kit.fontawesome.com/075922b03a.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
